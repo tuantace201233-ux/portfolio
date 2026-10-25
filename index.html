@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truong Anh Tuan - Portfolio & CV</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #e2e8f0;
+      }
+      /* Custom print stylesheet matching the exact layout */
+      @media print {
+        body {
+          background-color: #ffffff;
+          padding: 0;
+        }
+        .no-print {
+          display: none !important;
+        }
+        .cv-container {
+          box-shadow: none !important;
+          margin: 0 !important;
+          width: 100% !important;
+          max-width: none !important;
+          border-radius: 0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="py-6 px-4 flex flex-col items-center justify-center min-h-screen"
+  >
+    <!-- CV Container (Matches user's exact 2-column layout) -->
+    <div
+      class="cv-container w-full max-w-[210mm] bg-white shadow-2xl rounded-xl overflow-hidden flex flex-col md:flex-row relative border border-slate-300"
+    >
+      <!-- Left Sidebar (Light Gray Theme `#eef0f2`) -->
+      <div
+        class="w-full md:w-[35%] bg-[#eef0f2] text-slate-800 p-6 md:p-8 flex flex-col justify-between border-r border-slate-300"
+      >
+        <div class="space-y-6">
+          <!-- Circular Avatar (Top left) -->
+          <div class="flex justify-center md:justify-start">
+            <div
+              class="w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-md bg-white"
+            >
+              <img
+                src="https://placehold.co/300x300/cbd5e1/1e293b?text=TAT"
+                alt="Truong Anh Tuan"
+                class="w-full h-full object-cover"
+                onerror="
+                  this.src =
+                    'https://placehold.co/300x300/cbd5e1/1e293b?text=TAT'
+                "
+              />
+            </div>
+          </div>
+
+          <!-- ABOUT ME -->
+          <div class="space-y-2">
+            <h2
+              class="text-xs font-bold tracking-[0.2em] text-slate-900 border-b border-slate-400 pb-1"
+            >
+              ABOUT ME
+            </h2>
+            <p
+              class="text-[11.55px] text-slate-700 leading-relaxed text-justify"
+            >
+              Third-year Software Engineering student at FPT University, seeking
+              an OJT opportunity to apply programming knowledge, gain practical
+              experience, and develop software engineering skills in a
+              professional environment.
+            </p>
+          </div>
+
+          <!-- EDUCATION -->
+          <div class="space-y-2">
+            <h2
+              class="text-xs font-bold tracking-[0.2em] text-slate-900 border-b border-slate-400 pb-1"
+            >
+              EDUCATION
+            </h2>
+            <div class="text-[11.5px] space-y-0.5">
+              <p class="font-bold text-slate-900">Software Engineering</p>
+              <p class="text-slate-700">FPT University</p>
+              <p class="text-slate-500 font-medium text-[11px]">
+                2024 - Present
+              </p>
+            </div>
+          </div>
+
+          <!-- SKILL -->
+          <div class="space-y-3">
+            <h2
+              class="text-xs font-bold tracking-[0.2em] text-slate-900 border-b border-slate-400 pb-1"
+            >
+              SKILL
+            </h2>
+
+            <!-- Technical Skills -->
+            <div class="text-[11.5px] space-y-1">
+              <p class="font-bold text-slate-900">Technical Skills</p>
+              <ul class="list-disc list-inside space-y-1 text-slate-700 pl-1">
+                <li>
+                  <strong class="text-slate-900">Frontend:</strong> ReactJs,
+                  HTML, CSS, TypeScript
+                </li>
+                <li>
+                  <strong class="text-slate-900">Backend:</strong> Java
+                  (Spring), RESTful APIs
+                </li>
+                <li>
+                  <strong class="text-slate-900">Database:</strong> PostgreSQL
+                </li>
+                <li>
+                  <strong class="text-slate-900">Cloud:</strong> Cloudinary, AWS
+                  (basic)
+                </li>
+                <li>
+                  <strong class="text-slate-900">Version Control:</strong> Git,
+                  GitHub
+                </li>
+              </ul>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="text-[11.5px] space-y-1 pt-1">
+              <p class="font-bold text-slate-900">Soft Skills</p>
+              <ul class="list-disc list-inside space-y-1 text-slate-700 pl-1">
+                <li>Critical Thinking</li>
+                <li>Teamwork, Communication</li>
+                <li>Self-learning</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- LANGUAGE -->
+          <div class="space-y-2">
+            <h2
+              class="text-xs font-bold tracking-[0.2em] text-slate-900 border-b border-slate-400 pb-1"
+            >
+              LANGUAGE
+            </h2>
+            <ul
+              class="list-disc list-inside text-[11.5px] space-y-1 text-slate-700 pl-1"
+            >
+              <li>English</li>
+              <li>Japanese</li>
+              <li>Vietnamese - Native</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-4 text-[10px] text-slate-400 text-center">
+          <span>Interactive Portfolio v1.0</span>
+        </div>
+      </div>
+
+      <!-- Right Main Content Area -->
+      <div class="w-full md:w-[65%] flex flex-col justify-between bg-white">
+        <!-- Dark Header Block (Matches the image's top right black banner) -->
+        <div
+          class="bg-[#1e293b] text-white p-6 md:p-8 flex flex-col justify-center"
+        >
+          <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide">
+            TRUONG ANH TUAN
+          </h1>
+          <p
+            class="text-xs font-bold uppercase tracking-[0.25em] text-slate-300 mt-1"
+          >
+            FULLSTACK DEVELOPER INTERN
+          </p>
+        </div>
+
+        <!-- Content Area -->
+        <div class="p-6 md:p-8 space-y-6">
+          <!-- Contact Row -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-700 pb-4 border-b border-slate-300"
+          >
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-slate-900 w-4"></i>
+              <span>0376388955</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-brands fa-github text-slate-900 w-4"></i>
+              <a
+                href="https://github.com/tuantace201233-ux"
+                target="_blank"
+                class="hover:underline text-indigo-600 truncate"
+                >github.com/tuantace201233-ux</a
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-slate-900 w-4"></i>
+              <span class="truncate">tuantace201233@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-slate-900 w-4"></i>
+              <span>Can Tho, Vietnam</span>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE SECTION -->
+          <div class="space-y-4">
+            <div
+              class="flex items-center justify-between border-b-2 border-slate-300 pb-1"
+            >
+              <h2
+                class="text-sm font-bold uppercase tracking-[0.2em] text-slate-900"
+              >
+                EXPERIENCE
+              </h2>
+              <span class="text-xs font-semibold text-slate-500"
+                >2026 - Present</span
+              >
+            </div>
+
+            <!-- Project Card / Item -->
+            <div class="space-y-2">
+              <h3
+                class="font-bold text-slate-900 text-sm md:text-base leading-tight"
+              >
+                SoundWave - Music Streaming & Content Moderation Website
+              </h3>
+
+              <p class="text-[11.5px] font-medium text-slate-700 italic">
+                Group Project (5 members) | Spring Boot, ReactJS, TypeScript,
+                PostgreSQL, Cloudinary
+              </p>
+
+              <p class="text-xs font-bold text-slate-900 uppercase">
+                Full-stack Developer
+              </p>
+
+              <p class="text-[11.5px] text-slate-700 leading-relaxed">
+                Developed a web-based music streaming and publishing system with
+                role-based workflows for Guests, Listeners, Staff Moderators,
+                and Administrators.
+              </p>
+
+              <!-- Bullet points -->
+              <ul
+                class="list-disc list-inside space-y-1.5 text-[11.5px] text-slate-700 pl-1"
+              >
+                <li>
+                  Implemented core modules for music streaming, user
+                  playlist/favorite library, and artist track upload workflows.
+                </li>
+                <li>
+                  Integrated Cloudinary CDN for cloud-based audio streaming and
+                  artwork storage, and Java Mail Sender for OTP account
+                  verification.
+                </li>
+                <li>
+                  Built role-based access control (RBAC) and secure
+                  authentication using Spring Security, JWT access tokens, and
+                  HttpOnly refresh cookies.
+                </li>
+                <li>
+                  Developed Staff Moderation workflow to review track drafts,
+                  verify lyrics sync, and approve or reject submissions with
+                  feedback.
+                </li>
+                <li>
+                  Designed responsive user interfaces with React 19 and custom
+                  design tokens; wrote JUnit 5 & Mockito test suites for core
+                  services.
+                </li>
+                <li>
+                  Maintained code quality and Git branching strategy across a
+                  5-member agile development team.
+                </li>
+              </ul>
+
+              <div class="pt-2">
+                <a
+                  href="https://github.com/Hekio-Kun/SoundWaveProject"
+                  target="_blank"
+                  class="text-[11.5px] text-indigo-600 hover:underline font-medium inline-flex items-center gap-1.5"
+                >
+                  <i class="fa-brands fa-github"></i> Github:
+                  https://github.com/Hekio-Kun/SoundWaveProject
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="p-6 md:p-8 pt-0 text-right text-[10px] text-slate-400">
+          <span>Trương Anh Tuấn - FPT University Cần Thơ</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
